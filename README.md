@@ -7,7 +7,7 @@
 ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white)
 
 ## Overview
-This repository contains the source code for a blockchain-based Organ Donation and Transplantation System. This project was developed by us as a B.Tech Final Year Project for the Computer Science and Engineering department at the **National Institute of Technology (NIT) Silchar**.
+This repository contains the source code  for a blockchain-based Organ Donation and  Transplantation  System. This project was developed by us as a B.Tech Final Year Project for the Computer Science and Engineering department at the **National Institute of Technology (NIT) Silchar**.
 
 The system leverages decentralized ledger technology to solve critical issues in organ transplantation, such as lack of transparency, data silos between hospitals, and the risk of tampering with medical waiting lists. By combining off-chain storage for sensitive medical data and on-chain storage for status and allocation history, the platform ensures an immutable, transparent, and highly secure lifecycle for organ matching.
 
@@ -31,7 +31,7 @@ The system leverages decentralized ledger technology to solve critical issues in
 1. **React Client:** Provides tailored dashboards based on the user's RBAC role.
 2. **Node.js API Gateway:** Handles authentication (JWT), routes requests, manages the Redis cache, and interacts with the Fabric network via the SDK.
 3. **MongoDB:** Stores full patient profiles, encrypted medical notes, and off-chain data hashes.
-4. **Hyperledger Fabric:** Executes the `OrganRegistryChaincode` to validate state changes and record immutable transactions.
+4. **Hyperledger Fabric:** Executes the  `OrganRegistryChaincode` to validate state changes and record immutable transactions.
 
 ## Prerequisites
 To run this project locally, ensure you have the following installed:
@@ -109,5 +109,5 @@ REDIS_URL=redis://127.0.0.1:6379
 
 ## License
 
-This project is for academic purposes.
+This project is only for academic purposes.
 
