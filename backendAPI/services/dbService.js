@@ -22,5 +22,5 @@ exports.updatePatientStatus = async (id, newStatus) => {
 };
 
 exports.getOffChainDataByHash = async (dataHash) => {
-    return await PatientData.findOne({ dataHash });
+    return await PatientData.findOne ({ dataHash });
 };

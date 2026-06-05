@@ -4,7 +4,7 @@ const { Wallets } = require('fabric-network');
 const fs = require('fs');
 const path = require('path');
 
-async function main() {
+async function main () {
     try {
         const ccpPath = path.resolve(__dirname, 'config', 'connection-org1.json');
         const ccp = JSON.parse(fs.readFileSync(ccpPath, 'utf8'));
@@ -32,7 +32,7 @@ async function main() {
                 type: 'X.509',
             };
             await wallet.put('admin', x509Identity);
-            console.log('Successfully enrolled admin user "admin" and imported it into the wallet');
+            console.log ('Successfully enrolled admin user "admin" and imported it into the wallet');
         }
 
         
@@ -69,7 +69,7 @@ async function main() {
         console.log(`Successfully enrolled user "${userId}" and imported it into the wallet`);
 
     } catch (error) {
-        console.error(`Failed to enroll user: ${error}`);
+        console.error (`Failed to enroll user: ${error}`);
         process.exit(1);
     }
 }

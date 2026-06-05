@@ -8,6 +8,7 @@ const publicRoutes = require('./routes/publicRoutes');
 const globalErrorHandler = require('./middlewares/errorMiddleware');
 const AppError = require('./utils/AppError');
 
+
 const app = express();
 
 app.use(cors());
@@ -25,6 +26,6 @@ app.all(/(.*)/, (req, res, next) => {
     next(new AppError(`Can't find ${req.originalUrl} on this server!`, 404));
 });
 
-app.use(globalErrorHandler);
+app.use (globalErrorHandler);
 
 module.exports = app;
